@@ -6,7 +6,7 @@
 To fine-tune the model, use the following command:
 
 ```bash
-llamafactory-cli train examples/train_lora/llama3_lora_sft.yaml
+llamafactory-cli train examples/train_ijcai25/rq1_overview_codegemma/rq1_full_rq1_notrace_baseline.yaml
 ```
 
 ## Reproducibility Logs
