@@ -68,7 +68,7 @@ We welcome contributions to improve this framework! will continiously to contrib
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code for academic and commercial purposes.
+This project is licensed under the [Apache License](LICENSE). Feel free to use, modify, and distribute the code for academic and commercial purposes.
 
 ---
 
