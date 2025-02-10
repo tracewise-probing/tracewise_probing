@@ -1,0 +1,94 @@
+{% if tpl=="bug_msg_same_train" %}
+
+
+Provide a self-contained, buggy Python function or class that fails specific tests. Correct the provided BUGGY_PROGRAM. Output only the corrected code; do not include explanations, test cases, examples, or execution results.
+
+## Trace 
+
+**BUGGY_PROGRAM**
+
+```python
+{{buggy_code}}
+```
+
+## TESTCASES 
+
+
+**TEST1**
+
+{{failed_testcases}}
+
+
+## EXPLANATION 
+
+{{trace_message}}
+
+
+now you can output the correct code here 
+```python
+
+{% endif %}
+{% if tpl=="bug_msg" %}
+
+Provide a self-contained, buggy Python function or class that fails specific tests. Correct the provided BUGGY_PROGRAM. Output only the corrected code; do not include explanations, test cases, examples, or execution results.
+
+
+## Trace 
+
+**BUGGY_PROGRAM**
+
+```python
+{{buggy_code}}
+```
+
+
+{% if error_message is not none %}
+
+#### failed error message
+
+{{error_message}}
+
+
+{% endif %}
+
+now you can output the correct code here 
+```python
+
+
+{% endif %}
+
+
+{% if tpl=="bug_testcase_msg_docstring" %}
+
+Provide a self-contained, buggy Python function or class that fails specific tests. Correct the provided BUGGY_PROGRAM. Output only the corrected code; do not include explanations, test cases, examples, or execution results.
+
+## problem description
+
+{{description}}
+
+## Trace 
+
+**BUGGY_PROGRAM**
+
+```python
+{{buggy_code}}
+```
+
+
+
+#### failed testcase
+
+{{failed_testcases}}
+
+{% if error_message is not none %}
+#### failed error message
+
+{{error_message}}
+{% endif %}
+
+what's your response to this fix?
+
+
+{% endif %}
+
+

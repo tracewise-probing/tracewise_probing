@@ -1,0 +1,65 @@
+
+You are tasked with converting code that handles standard input and output into a function-based implementation. The goal is to rewrite the logic into a reusable function, replacing standard input with function arguments and standard output with a return value that matches the expected test case format. Constraints: 1, only output the rewritten function and Rewritten json-based testcase. 2, the testcase is json format, 3, the inputs and output are same size .   
+
+
+** Example Instruction **
+** Original Code **
+
+```
+import re
+s = input()
+result = re.findall(r'(?<=[QWRTYPSDFGHJKLZXCVBNMqwrtypsdfghjklzxcvbnm])([AEIOUaeiou]{2,})(?=[QWRTYPSDFGHJKLZXCVBNMqwrtypsdfghjklzxcvbnm])',s)
+if result:
+    for i in result:
+        print(i)
+else:
+    print((-1))
+```
+
+
+** TestCase **
+
+```
+'{"inputs": ["rabcdeefgyYhFjkIoomnpOeorteeeeet","rabcdeefgyYhFjkIoomnpOeorteeeeeaaat"], "outputs": ["ee\\nIoo\\nOeo\\neeeee","ee\\nIoo\\nOeo\\neeeeeaaa"]}'
+```
+
+** Rewritten functions  **
+
+```python 
+import re
+
+def find_vowel_sequences(string: str) -> str:
+    cons = 'QWRTYPSDFGHJKLZXCVBNMqwrtypsdfghjklzxcvbnm'
+    vowels = 'AEIOUaeiou'
+    matches = re.findall(r"(?<=[%s])([%s]{2,})[%s]" % (cons, vowels, cons), string)
+    return  matches or ['-1']
+```
+
+** Rewritten testcase  **
+
+```
+{
+  "fn_name": "find_vowel_sequences",
+  "inputs": ["rabcdeefgyYhFjkIoomnpOeorteeeeet","rabcdeefgyYhFjkIoomnpOeorteeeeeaaat"],
+  "outputs": [ ["ee", "Ioo", "Oeo", "eeeee"],["ee", "Ioo", "Oeo", "eeeeeaaa"]]
+}
+```
+
+
+You will follow a similar process for the given code and test cases, ensuring the function signature has clear arguments and returns output formatted according to the provided test case.
+
+
+
+** Original Code **
+```python
+{{code}}
+```
+
+** TestCase **
+
+```
+{{input_output}}
+```
+
+** Rewritten functions  **
+```python

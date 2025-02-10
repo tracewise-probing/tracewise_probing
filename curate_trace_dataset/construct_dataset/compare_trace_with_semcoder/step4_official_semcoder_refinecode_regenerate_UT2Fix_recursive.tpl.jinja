@@ -1,0 +1,49 @@
+Your primary task is to debug and fix the provided code to ensure it passes all associated test cases.
+
+
+
+### buggy
+
+{% for round_item in round_item_list -%}
+
+** {{round_item.round_str}} round buggy code ** 
+```python
+{{round_item.extracted_code}}
+```
+** {{round_item.round_str}} round Test Cases ** 
+{% if round_item.tests  | length >1 %}
+```python
+{{round_item.tests}}
+```
+{% else %}
+missing the testcase in this round. 
+{% endif %}
+
+{% if 'extracted_code__tests__output' in round_item %}
+** {{round_item.round_str}} Execution feedback ** 
+{{round_item.extracted_code__tests__output}}
+{% endif %}
+
+{% endfor %}
+
+
+
+
+#### Constraints:
+
+* Do not include explanations, reasoning, or usage examples in the revised code.
+
+* Ensure the revised code is self-contained, function/class-based, and free of top-level code.
+
+* If test case are mistakenly mixed into the code section(i.e revised code), move them to the revised test cases section without breaking functionality. If a single test function includes multiple edge cases, separate it into individual functions as well.
+
+* The test cases use the `pytest` framework and should utilize the `unittest.mock.patch` decorator to mock interactions with hardware, system operations, file paths, disk storage, or third-party libraries. However, interactions with Python's internal standard library should remain unmocked for direct execution. Ensure the test cases are efficient and precise in verifying the code's required behavior. If needed, revise the test cases.
+
+
+The execution feedback provided above has been processed through the latest round of fixes, attempted over multiple rounds, but this latest fix still fails. Please deliver a new revised fix code and its corresponding test cases. Your response should follow the response template below. No explanation or additional thoughts are needed only output the code for each section.
+
+
+
+#### {{round_next_str}} Revised Code(Output the fixed code here, donot include any test case function ) 
+
+#### {{round_next_str}} Revised Test Cases (Include revised test cases )

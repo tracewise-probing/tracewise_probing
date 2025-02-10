@@ -1,0 +1,30 @@
+you are tasked to provide a self-contained Python function or class within a code block that solves the following problem and passes the corresponding tests. Include only the Python implementation (function or class definition); do not output any explanations, test cases, example usage, or execution results.
+
+** problem **
+
+{{question}}
+
+** Test Cases ** 
+```json
+{{tests}}
+```
+
+
+{% if "def " not in starter_code %}
+
+the entry point is `{{starter_code}}`
+
+
+now, write a Python script with a self-contained function that solves the problem following :
+```python
+
+{% else %}
+
+
+now, write a Python script with a self-contained function that solves the problem, you can start with :
+```python
+
+{{starter_code}}
+
+{% endif %}
+

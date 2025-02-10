@@ -1,0 +1,39 @@
+You are given a problem and a solution (which may contain buggy code). Your task is to output the fixed code and a unit test to demonstrate the correctness of your fix.
+
+Your test cases should be written using pytest, be self-contained, and each test case's function name should start with test_. These test cases should use the pytest framework and utilize the unittest.mock.patch decorator to mock interactions with hardware, system operations, file paths, disk storage, or third-party libraries. However, interactions with Python's internal standard library should remain unmocked for direct execution. Ensure the test cases are efficient and precise in verifying the code's required behavior.
+
+#### Constraints:
+
+* Do not include explanations, reasoning, or usage examples in the revised code.
+
+* Ensure the revised code is self-contained, function/class-based, and free of top-level code.
+
+* If test case functions (e.g., test_xxxxx) are mistakenly mixed into the code section, move them to the test cases section without breaking functionality.
+>> For example:
+
+```python
+def test_corner_case_xxxx():
+    ...
+
+def test_corner_case_yyyy():
+    ...
+
+```
+Group correlated test cases together and separate repetitive cases into multiple test cases.
+
+## Problem Description
+
+{{problem}}
+
+## Unverified Implementation
+
+{{code_str}}
+
+Now, proceed with the provided code to deliver only the Revised Code and Test Cases. Your response should include the following two sections:
+
+** Revised Code **
+
+(Output the fixed code here.)
+
+** Revised Test Cases **
+(Include revised test cases )

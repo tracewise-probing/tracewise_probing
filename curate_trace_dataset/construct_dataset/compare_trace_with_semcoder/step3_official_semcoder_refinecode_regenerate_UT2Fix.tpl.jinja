@@ -1,0 +1,43 @@
+Your primary task is to debug and fix the provided code to ensure it passes all associated test cases. The goal is to make the code function as intended under the conditions defined by the tests, adhering to the desired behavior.
+
+The test cases use the `pytest` framework and should utilize the `unittest.mock.patch` decorator to mock interactions with hardware, system operations, file paths, disk storage, or third-party libraries. However, interactions with Python's internal standard library should remain unmocked for direct execution. Ensure the test cases are efficient and precise in verifying the code's required behavior.
+
+If needed, revise the test cases.
+
+
+#### Constraints:
+
+* Do not include explanations, reasoning, or usage examples in the revised code.
+
+* Ensure the revised code is self-contained, function/class-based, and free of top-level code.
+
+* If test case functions (e.g., `test_xxxxx`) are mistakenly mixed into the code section, move them to the revised test cases section without breaking functionality.
+
+
+
+
+
+** buggy code ** 
+```python
+{{extracted_code}}
+```
+** Test Cases ** 
+```python
+
+{{tests}}
+```
+
+
+** Execution feedback ** 
+{{extracted_code__tests__output}}
+
+
+Proceed with the provided buggy code, test cases, and execution feedback to deliver only the Revised Code and Revised Test Cases, if applicable, Your response should include the following two sections:
+
+
+** Revised Code **
+(Output the fixed code here. otherwise, omit this section, and donot output any words )
+
+** Revised Test Cases **
+(Include revised test cases if applicable; otherwise, omit this section and  donot output any words)
+
