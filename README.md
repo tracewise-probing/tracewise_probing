@@ -82,22 +82,23 @@ pip install -e .
 ### Semantic-Enhanced Code Generation
 
 ```bash
+## Note, This wrapped command will change in future, it is unstable, please use directly from folder: finetune_src/LLaMA-Factory
 # Basic usage - Full trace enhancement
 semenhance.finetune --model "deepseek-ai/deepseek-coder-6.7b-base" \
-                    --dataset mbpp \
+                    --dataset trace_corpus \
                     --trace-type execution \
                     --method full-trace
 
 # LoRA fine-tuning for efficient training
 semenhance.finetune --model "google/codegemma-2b" \
-                    --dataset mbpp \
+                    --dataset trace_corpus \
                     --trace-type execution \
                     --method full-trace \
                     --lora-rank 64
 
 # Baseline training without traces
 semenhance.finetune --model "meta-llama/Llama-3.1-8B" \
-                    --dataset mbpp \
+                    --dataset trace_corpus \
                     --trace-type none \
                     --method baseline
 
@@ -106,7 +107,7 @@ semenhance.finetune --list-configs
 
 # Dry run to preview the command
 semenhance.finetune --model "deepseek-ai/deepseek-coder-6.7b-base" \
-                    --dataset mbpp \
+                    --dataset trace_corpus \
                     --trace-type execution \
                     --method full-trace \
                     --dry-run
