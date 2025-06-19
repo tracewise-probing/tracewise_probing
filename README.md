@@ -18,6 +18,10 @@
     <a href="#-acknowledgement">🙏Acknowledgement</a>
 </p>
 
+![Python debugging session showing convert_to_vertical function iterations](./tracewise.png)
+
+This screenshot shows a Python debugging environment with multiple iterations of a text-to-vertical conversion function that's currently failing its test case.
+
 ## 📢 News
 
 Who's using SemEnhance framework? SemEnhance has been adopted by various research teams and organizations:
