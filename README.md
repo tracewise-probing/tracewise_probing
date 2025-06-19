@@ -9,13 +9,13 @@
 </p>
 
 <p align="center">
-    <a href="#-about">📙About</a> •
-    <a href="#-quick-start">🔥Quick Start</a> •
-    <a href="#-framework-components">🚀Framework Components</a> •
-    <a href="#-key-findings">📊Key Findings</a> •
-    <a href="#-installation--setup">🔧Installation</a> •
-    <a href="#-citation">📜Citation</a> •
-    <a href="#-acknowledgement">🙏Acknowledgement</a>
+   <a href="https://tracewise-probing.github.io/python_sandbox.html">🐍 Playground</a> •
+   <a href="https://tracewise-probing.github.io/leaderboard.html">🏆 Leaderboard</a> •
+   <a href="#-quick-start">⚡ Quick Start</a> •
+   <a href="#-framework-components">🧩 Framework Components</a> •
+   <a href="#-installation--setup">⚙️ Installation</a> •
+   <a href="#-citation">📝 Citation</a> •
+   <a href="#-acknowledgement">💝 Acknowledgement</a>
 </p>
 
 ![Python debugging session showing convert_to_vertical function iterations](./tracewise.png)
