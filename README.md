@@ -274,7 +274,6 @@ pre-commit install
 @inproceedings{semenhance2025,
   title = {SemEnhance: A Comprehensive Framework for Code LLM Semantic Enhancement with Execution Traces},
   author = {[Authors]},
-  booktitle = {Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
   year = {2025},
   url = {https://github.com/tracewise-probing/tracewise_probing},
 }
