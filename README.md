@@ -1,4 +1,4 @@
-# `SemEnhance(🔍) => 🚀`
+# `SemEnhance(Do Code Semantics Help? A Comprehensive Study on Execution Trace-Based Information for Code Large Language Models🔍) => 🚀`
 ![Project Illustration](project.svg)
 
 <p align="center">
@@ -294,5 +294,5 @@ This project is licensed under the Apache License 2.0. See [LICENSE](LICENSE) fo
 ---
 
 <p align="center">
-    <i>SemEnhance: Advancing Code LLMs through Semantic Understanding</i>
+    <i>SemEnhance: Do Code Semantics Help? A Comprehensive Study on Execution Trace-Based Information for Code Large Language Modelsg</i>
 </p>
