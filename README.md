@@ -1,4 +1,5 @@
-# `SemEnhance(Do Code Semantics Help? A Comprehensive Study on Execution Trace-Based Information for Code Large Language Models🔍) => 🚀`
+# `SemEnhance(🔍) => 🚀`
+
 ![Project Illustration](project.svg)
 
 <p align="center">
