@@ -173,8 +173,8 @@
     <ellipse cx="0" cy="0" rx="45" ry="25" fill="white" stroke="#ccc" stroke-width="2"/>
     <circle cx="-25" cy="15" r="4" fill="white" stroke="#ccc" stroke-width="1"/>
     <circle cx="-15" cy="22" r="2" fill="white" stroke="#ccc" stroke-width="1"/>
-    <text x="0" y="-8" font-size="10" text-anchor="middle" fill="#333">Runtime</text>
-    <text x="0" y="5" font-size="10" text-anchor="middle" fill="#333">Behavior?</text>
+    <text x="0" y="-8" font-size="10" text-anchor="middle" fill="#333">Test-Scaling </text>
+    <text x="0" y="5" font-size="10" text-anchor="middle" fill="#333">Runtime Behavior?</text>
   </g>
   
   <!-- Thought bubble from teal AI -->
@@ -182,8 +182,8 @@
     <ellipse cx="0" cy="0" rx="50" ry="25" fill="white" stroke="#ccc" stroke-width="2"/>
     <circle cx="-30" cy="15" r="4" fill="white" stroke="#ccc" stroke-width="1"/>
     <circle cx="-20" cy="22" r="2" fill="white" stroke="#ccc" stroke-width="1"/>
-    <text x="0" y="-8" font-size="10" text-anchor="middle" fill="#333">Execution</text>
-    <text x="0" y="5" font-size="10" text-anchor="middle" fill="#333">Traces?</text>
+    <text x="0" y="-8" font-size="10" text-anchor="middle" fill="#333">Finetuned </text>
+    <text x="0" y="5" font-size="10" text-anchor="middle" fill="#333">Execution Traces?</text>
   </g>
   
   <!-- Floor -->
