@@ -190,6 +190,6 @@
   <rect x="0" y="520" width="800" height="80" fill="#DEB887"/>
   
   <!-- Title at bottom -->
-  <text x="400" y="570" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">SemEnhance: Exploring Semantic Information in Code LLMs</text>
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">SemEnhance: Do Code Semantics Help? A Comprehensive Study on Execution Trace-Based Information for Code Large Language Models</text>
   
 </svg>
