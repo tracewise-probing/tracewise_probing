@@ -156,7 +156,7 @@
     <text x="95" y="82" font-size="8" text-anchor="middle">LLM Train</text>
     
     <!-- Result -->
-    <text x="75" y="105" font-size="9" fill="#FF6B6B">Comprehensive Impact Analysis!</text>
+    <text x="20" y="105" font-size="9" fill="#87CEEB">Comprehensive Impact Analysis!</text>
   </g>
   
   <!-- Small arrow marker -->
