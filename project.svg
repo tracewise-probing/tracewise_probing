@@ -1,0 +1,195 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f0"/>
+  
+  <!-- Blackboard -->
+  <rect x="50" y="50" width="500" height="300" fill="#2d5a3d" stroke="#8B4513" stroke-width="8" rx="10"/>
+  
+  <!-- Blackboard frame highlight -->
+  <rect x="55" y="55" width="490" height="290" fill="none" stroke="#A0522D" stroke-width="2" rx="8"/>
+  
+  <!-- Title on blackboard -->
+  <text x="300" y="90" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">SemEnhance Framework</text>
+  
+  <!-- Code execution trace visualization -->
+  <text x="80" y="130" font-family="monospace" font-size="14" fill="#90EE90">Code Input:</text>
+  <text x="80" y="150" font-family="monospace" font-size="12" fill="#87CEEB">def factorial(n):</text>
+  <text x="100" y="170" font-family="monospace" font-size="12" fill="#87CEEB">  return n * factorial(n-1)</text>
+  
+  <!-- Execution trace arrow -->
+  <path d="M 320 140 Q 350 140 380 160" stroke="#FFA500" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Execution trace -->
+  <text x="390" y="130" font-family="monospace" font-size="14" fill="#FFB6C1">Execution Trace:</text>
+  <text x="390" y="150" font-family="monospace" font-size="12" fill="#FFB6C1">(3) → 3 * factorial(2)</text>
+  <text x="390" y="170" font-family="monospace" font-size="12" fill="#FFB6C1">(2) → 2 * factorial(1)</text>
+  <text x="390" y="190" font-family="monospace" font-size="12" fill="#FFB6C1">(1) → 1 * factorial(0)</text>
+  
+  <!-- Framework components -->
+  <text x="80" y="220" font-family="Arial, sans-serif" font-size="14" fill="#FFFF99">Semantic Integration:</text>
+  <text x="80" y="240" font-family="Arial, sans-serif" font-size="12" fill="#FFFF99">• SFT Enhancement</text>
+  <text x="80" y="260" font-family="Arial, sans-serif" font-size="12" fill="#FFFF99">• Test-time Scaling</text>
+  <text x="80" y="280" font-family="Arial, sans-serif" font-size="12" fill="#FFFF99">• Runtime Behavior Analysis</text>
+  
+  <!-- Results box -->
+  <rect x="330" y="220" width="180" height="80" fill="#4169E1" stroke="white" stroke-width="2" rx="5"/>
+  <text x="420" y="240" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Key Finding:</text>
+  <text x="420" y="255" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Limited benefits from</text>
+  <text x="420" y="270" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">semantic information</text>
+  <text x="420" y="285" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">in prompts</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FFA500"/>
+    </marker>
+  </defs>
+  
+  <!-- Cute AI characters as students -->
+  
+  <!-- Yellow AI (confused about semantic reasoning) -->
+  <g transform="translate(100, 380)">
+    <ellipse cx="0" cy="0" rx="35" ry="40" fill="#FFD700"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="50" rx="25" ry="35" fill="#FFD700"/>
+    <!-- Eyes (confused) -->
+    <circle cx="-12" cy="-8" r="8" fill="white"/>
+    <circle cx="12" cy="-8" r="8" fill="white"/>
+    <circle cx="-12" cy="-8" r="4" fill="black"/>
+    <circle cx="12" cy="-8" r="4" fill="black"/>
+    <!-- Confused expression -->
+    <path d="M -15 8 Q 0 18 15 8" stroke="black" stroke-width="2" fill="none"/>
+    <!-- Arms -->
+    <ellipse cx="-30" cy="40" rx="8" ry="20" fill="#FFD700"/>
+    <ellipse cx="30" cy="40" rx="8" ry="20" fill="#FFD700"/>
+    <!-- Question marks around head -->
+    <text x="-50" y="-20" font-size="20" fill="#FF6B6B">?</text>
+    <text x="45" y="-15" font-size="20" fill="#FF6B6B">?</text>
+  </g>
+  
+  <!-- Desk for yellow AI -->
+  <rect x="70" y="470" width="60" height="40" fill="#8B4513" rx="5"/>
+  <rect x="75" y="465" width="50" height="5" fill="#A0522D" rx="2"/>
+  <!-- Book on desk -->
+  <rect x="85" y="455" width="20" height="3" fill="#4169E1"/>
+  <rect x="85" y="452" width="20" height="3" fill="white"/>
+  
+  <!-- Teal AI (struggling with execution traces) -->
+  <g transform="translate(280, 380)">
+    <ellipse cx="0" cy="0" rx="35" ry="40" fill="#20B2AA"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="50" rx="25" ry="35" fill="#20B2AA"/>
+    <!-- Eyes (worried) -->
+    <circle cx="-12" cy="-8" r="8" fill="white"/>
+    <circle cx="12" cy="-8" r="8" fill="white"/>
+    <circle cx="-12" cy="-5" r="4" fill="black"/>
+    <circle cx="12" cy="-5" r="4" fill="black"/>
+    <!-- Worried expression -->
+    <path d="M -12 12 Q 0 5 12 12" stroke="black" stroke-width="2" fill="none"/>
+    <!-- Arms -->
+    <ellipse cx="-30" cy="40" rx="8" ry="20" fill="#20B2AA"/>
+    <ellipse cx="30" cy="40" rx="8" ry="20" fill="#20B2AA"/>
+    <!-- Sweat drops -->
+    <ellipse cx="-25" cy="-10" rx="3" ry="6" fill="#87CEEB"/>
+    <ellipse cx="25" cy="-5" rx="3" ry="6" fill="#87CEEB"/>
+  </g>
+  
+  <!-- Desk for teal AI -->
+  <rect x="250" y="470" width="60" height="40" fill="#8B4513" rx="5"/>
+  <rect x="255" y="465" width="50" height="5" fill="#A0522D" rx="2"/>
+  <!-- Code papers on desk -->
+  <rect x="260" y="455" width="15" height="10" fill="white" stroke="black" stroke-width="1"/>
+  <line x1="262" y1="457" x2="273" y2="457" stroke="black" stroke-width="0.5"/>
+  <line x1="262" y1="459" x2="270" y2="459" stroke="black" stroke-width="0.5"/>
+  <line x1="262" y1="461" x2="275" y2="461" stroke="black" stroke-width="0.5"/>
+  
+  <!-- Orange AI teacher (explaining the framework) -->
+  <g transform="translate(600, 350)">
+    <ellipse cx="0" cy="0" rx="40" ry="45" fill="#FF6347"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="60" rx="30" ry="40" fill="#FF6347"/>
+    <!-- Glasses -->
+    <circle cx="-15" cy="-8" r="12" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="15" cy="-8" r="12" fill="white" stroke="black" stroke-width="2"/>
+    <line x1="3" y1="-8" x2="-3" y2="-8" stroke="black" stroke-width="2"/>
+    <!-- Eyes -->
+    <circle cx="-15" cy="-8" r="6" fill="black"/>
+    <circle cx="15" cy="-8" r="6" fill="black"/>
+    <!-- Happy expression -->
+    <path d="M -15 8 Q 0 20 15 8" stroke="black" stroke-width="2" fill="none"/>
+    <!-- Arms (one pointing to board) -->
+    <ellipse cx="-40" cy="45" rx="10" ry="25" fill="#FF6347" transform="rotate(-30 -40 45)"/>
+    <ellipse cx="35" cy="45" rx="8" ry="20" fill="#FF6347"/>
+    <!-- Pointer stick -->
+    <line x1="-50" y1="25" x2="-320" y2="100" stroke="#8B4513" stroke-width="3"/>
+    <circle cx="-50" cy="25" r="3" fill="#8B4513"/>
+  </g>
+  
+  <!-- Teacher's podium -->
+  <rect x="570" y="470" width="60" height="50" fill="#8B4513" rx="5"/>
+  <rect x="575" y="465" width="50" height="5" fill="#A0522D" rx="2"/>
+  <!-- Research papers on podium -->
+  <rect x="580" y="450" width="20" height="15" fill="white" stroke="black" stroke-width="1"/>
+  <text x="590" y="460" font-size="8" text-anchor="middle" fill="black">SemEnhance</text>
+  
+  <!-- Framework diagram on side -->
+  <g transform="translate(620, 150)">
+    <rect x="0" y="0" width="150" height="130" fill="white" stroke="#333" stroke-width="2" rx="10"/>
+    <text x="75" y="18" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333" font-weight="bold">Framework Flow</text>
+    
+    <!-- Input -->
+    <rect x="15" y="30" width="35" height="18" fill="#90EE90" rx="3"/>
+    <text x="32" y="42" font-size="9" text-anchor="middle">Code</text>
+    
+    <!-- Arrow -->
+    <path d="M 50 39 L 65 39" stroke="#333" stroke-width="2" marker-end="url(#smallArrow)"/>
+    
+    <!-- Semantic Processing -->
+    <rect x="70" y="30" width="50" height="18" fill="#FFB6C1" rx="3"/>
+    <text x="95" y="42" font-size="8" text-anchor="middle">Semantic</text>
+    
+    <!-- Arrow down -->
+    <path d="M 95 50 L 95 65" stroke="#333" stroke-width="2" marker-end="url(#smallArrow)"/>
+    
+    <!-- LLM Training -->
+    <rect x="70" y="70" width="50" height="18" fill="#87CEEB" rx="3"/>
+    <text x="95" y="82" font-size="8" text-anchor="middle">LLM Train</text>
+    
+    <!-- Result -->
+    <text x="75" y="105" font-size="9" fill="#FF6B6B">Limited Impact!</text>
+  </g>
+  
+  <!-- Small arrow marker -->
+  <defs>
+    <marker id="smallArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Thought bubbles showing the challenges -->
+  
+  <!-- Thought bubble from yellow AI -->
+  <g transform="translate(150, 320)">
+    <ellipse cx="0" cy="0" rx="45" ry="25" fill="white" stroke="#ccc" stroke-width="2"/>
+    <circle cx="-25" cy="15" r="4" fill="white" stroke="#ccc" stroke-width="1"/>
+    <circle cx="-15" cy="22" r="2" fill="white" stroke="#ccc" stroke-width="1"/>
+    <text x="0" y="-8" font-size="10" text-anchor="middle" fill="#333">Runtime</text>
+    <text x="0" y="5" font-size="10" text-anchor="middle" fill="#333">Behavior?</text>
+  </g>
+  
+  <!-- Thought bubble from teal AI -->
+  <g transform="translate(320, 320)">
+    <ellipse cx="0" cy="0" rx="50" ry="25" fill="white" stroke="#ccc" stroke-width="2"/>
+    <circle cx="-30" cy="15" r="4" fill="white" stroke="#ccc" stroke-width="1"/>
+    <circle cx="-20" cy="22" r="2" fill="white" stroke="#ccc" stroke-width="1"/>
+    <text x="0" y="-8" font-size="10" text-anchor="middle" fill="#333">Execution</text>
+    <text x="0" y="5" font-size="10" text-anchor="middle" fill="#333">Traces?</text>
+  </g>
+  
+  <!-- Floor -->
+  <rect x="0" y="520" width="800" height="80" fill="#DEB887"/>
+  
+  <!-- Title at bottom -->
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">SemEnhance: Exploring Semantic Information in Code LLMs</text>
+  
+</svg>
