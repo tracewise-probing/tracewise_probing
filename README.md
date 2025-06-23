@@ -1,4 +1,5 @@
 # `SemEnhance(🔍) => 🚀`
+![Project Illustration](project.svg)
 
 <p align="center">
     <a href="#"><img src="https://img.shields.io/badge/%F0%9F%8F%86-semantic--enhancement-8A2BE2"></a>
