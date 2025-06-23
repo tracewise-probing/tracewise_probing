@@ -34,9 +34,9 @@
   <!-- Results box -->
   <rect x="330" y="220" width="180" height="80" fill="#4169E1" stroke="white" stroke-width="2" rx="5"/>
   <text x="420" y="240" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Key Finding:</text>
-  <text x="420" y="255" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Limited benefits from</text>
-  <text x="420" y="270" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">semantic information</text>
-  <text x="420" y="285" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">in prompts</text>
+  <text x="420" y="255" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Limited benefits for Finetune</text>
+  <text x="420" y="270" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Helpful semantic information</text>
+  <text x="420" y="285" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">in Test-Scaling</text>
   
   <!-- Arrow marker definition -->
   <defs>
