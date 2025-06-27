@@ -156,12 +156,25 @@ def main():
     parser.add_argument('--base-dir', type=str, 
                        default='finetune_src/LLaMA-Factory/examples/train_examples',
                        help='Base configuration directory path')
+    parser.add_argument('--llamafactory-dir', type=str,
+                       default='finetune_src/LLaMA-Factory',
+                       help='LLaMA-Factory directory path')
     parser.add_argument('--list-configs', action='store_true',
                        help='List available configurations and exit')
     parser.add_argument('--dry-run', action='store_true',
                        help='Print the command without executing it')
     
     args = parser.parse_args()
+    
+    # Store the original working directory
+    original_cwd = os.getcwd()
+    
+    # Check if LLaMA-Factory directory exists
+    llamafactory_path = os.path.abspath(args.llamafactory_dir)
+    if not os.path.exists(llamafactory_path):
+        print(f"Error: LLaMA-Factory directory not found: {llamafactory_path}")
+        print("Please make sure the path is correct or specify --llamafactory-dir")
+        sys.exit(1)
     
     if args.list_configs:
         # List all available config files
@@ -224,30 +237,46 @@ def main():
             print(f"  - {alt_config}")
         print()
     
+    # Convert config path to relative path from LLaMA-Factory directory
+    try:
+        # Get the absolute path of the config file
+        abs_config_path = os.path.abspath(config_path)
+        # Get relative path from LLaMA-Factory directory
+        rel_config_path = os.path.relpath(abs_config_path, llamafactory_path)
+    except ValueError:
+        # If relative path calculation fails, use absolute path
+        rel_config_path = os.path.abspath(config_path)
+    
     # Construct llamafactory-cli command
     cmd = [
         'llamafactory-cli',
         'train',
-        config_path
+        rel_config_path
     ]
     
     print(f"SemEnhance Fine-tuning")
     print(f"Model: {args.model}")
-    print(f"Dataset: {args.dataset}")
+    print(f"Dataset: {args.dataset}")  
     print(f"Trace Type: {args.trace_type}")
     print(f"Method: {args.method}")
     if args.lora_rank:
         print(f"LoRA Rank: {args.lora_rank}")
     print(f"Config: {config_path}")
+    print(f"Working Directory: {llamafactory_path}")
     print(f"Command: {' '.join(cmd)}")
     print("-" * 50)
     
     if args.dry_run:
         print("Dry run - command would be:")
+        print(f"cd {llamafactory_path}")
         print(' '.join(cmd))
         return
     
     try:
+        # Change to LLaMA-Factory directory
+        os.chdir(llamafactory_path)
+        print(f"Changed working directory to: {os.getcwd()}")
+        
         # Execute the command
         result = subprocess.run(cmd, check=True)
         print("Training completed successfully!")
@@ -259,6 +288,13 @@ def main():
     except FileNotFoundError:
         print("Error: llamafactory-cli not found. Please ensure it's installed and in PATH.")
         sys.exit(1)
+    except Exception as e:
+        print(f"Error: {e}")
+        sys.exit(1)
+    finally:
+        # Always restore original working directory
+        os.chdir(original_cwd)
 
 if __name__ == '__main__':
     main()
+
