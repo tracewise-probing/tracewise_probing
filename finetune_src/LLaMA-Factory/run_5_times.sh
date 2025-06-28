@@ -2,7 +2,7 @@
 
 # Configuration with defaults
 YAML_FILE="${YAML_FILE:-examples/train_examples/rq1_overview/rq1_full_rq1_notrace_baseline.yaml}"
-CUDA_DEVICES="${CUDA_DEVICES:-0,1}"
+CUDA_DEVICES="${CUDA_DEVICES:-0,1,2,3,4,5,6,7}"
 NUM_ROUNDS="${NUM_ROUNDS:-5}"
 
 # Check if YAML file exists
