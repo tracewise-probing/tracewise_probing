@@ -286,6 +286,7 @@ pre-commit install
 - [HumanEval](https://github.com/openai/human-eval) and [MBPP](https://github.com/google-research/google-research/tree/master/mbpp) for foundational benchmarks
 - [EvalPlus](https://github.com/evalplus/evalplus) for rigorous evaluation framework
 - [LlamaFactory](https://github.com/hiyouga/LLaMA-Factory) for efficient fine-tuning infrastructure
+- [PySnooper](https://github.com/cool-RR/PySnooper) for trace collection. 
 - The open-source community for continuous support and contributions
 
 ## 📄 License
